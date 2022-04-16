@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box; 
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* NAVIGATION BAR */
+
+#navbar {  
+  background-color: #DEA17C; 
+  width: 100%; 
+  color: white; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pageHeading {
+  font-family: "Dancing Script", serif;
+  font-size: 1.8rem;
+  padding: 10px 10px 15px 15px;
+}
+
+#mobileNavMenuButton {
+  color: white;
+  padding-right: 15px;
+}
+
+#mobileMenuDrawer {
+  display: none;
+  width: 100%;
+  border-bottom: 1px solid #DADADA;
+}
+
+#menuItems {
+  list-style-type: none;
+  width: 100%;
+}
+
+#menuItems > li {
+  text-align: center;
+  padding: 10px;
+}
+
+#menuItems > li > a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* PAGE CONTENT */
+
+#content {
+  padding: 10px;
+}
+
+/* FOOTER */
+
+#footer {
+  background-color: #ddebd4;
+  width: 100%;
+  color: #333;
+  margin-top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* CONTACT PAGE */
+
+#contactForm {
+  width: 100%;
+}
+
+#contactForm > input, #contactForm > textarea, #contactForm > button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+#contactForm > button {
+  background-color: #70867f;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+#googleMap {
+  width: 100%;
+  height: 500px;
+}
+
+/* MEDIA QUERIES */
+
+/* Rules that apply ONLY to phones */
+@media only screen and (max-width : 768px) {
+    /* CSS rules go here... */
+}
+
+/* Rules that apply ONLY to tablets*/
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    /* CSS rules go here... */
+}
+
+/* Rules that apply ONLY to desktops*/
+@media only screen and (min-width : 1024px) {
+  #content {
+    padding-left: 250px;
+    padding-right: 250px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #contactForm {
+    width: 50%;
+    margin: auto;
+  }
+}
+
